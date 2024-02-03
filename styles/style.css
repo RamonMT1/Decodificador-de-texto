@@ -1,0 +1,145 @@
+:root {
+    --cor-fundo: #72705B;
+    --cor-texto: #f1f2f2;
+    --cor-fundo-secundaria: #9AA0A8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--cor-texto);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+
+}
+
+.div-label {
+    padding-bottom: 4px;
+    margin-left: 20%;
+    float: left;
+}
+
+.div-label img {
+    width: 14px;
+}
+
+.texto-input {
+    margin-left: 20%;
+    width: 60%;
+    resize: none;
+    border: 4px solid var(--cor-texto);
+    border-radius: 10px;
+    background-color: var(--cor-fundo-secundaria);
+}   
+
+.div-buttons {
+    float: right;
+    margin: 3.5% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-texto);
+    padding: 3px 5px;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
+}
+
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+#botaoCopiar {
+    margin-top: 40%;
+}
+
+footer {
+    background-color: var(--cor-texto);
+}
+
+footer p {
+    color: var(--cor-fundo);
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+#botaoCopiar:disabled {
+    border: none;
+    color: var(--cor-fundo);
+}
+
+#botaoCopiar:disabled:hover {
+    background-color: var(--cor-fundo);
+}
+
+@media (max-width: 1286px) {
+    .button {
+        font-size: 12px;
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 1114px) {
+    body {
+        overflow: auto;
+    }
+
+    .div-label {
+        margin-left: 10%;
+    }
+
+    .div-label label {
+        font-size: 12px;
+    }
+
+    .texto-input {
+        width: 80%;
+        margin: 0 10%;
+        padding: 0;
+    }
+    .div-buttons {
+        float: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .button {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #botaoCopiar {
+        margin-top: 20px;
+    }
+}

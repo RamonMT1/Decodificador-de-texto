@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Challenge Alura</title>
+</head>
+<body>
+    <h1>Decodificador de Texto</h1>
+    <main>
+        <section>
+            <div class="div-label">
+                <img src="./assets/bi_exclamation-circle-fill.svg" alt="ponto de exclamação">
+                <label for="texto-input">Apenas letras minúsculas e sem acento!</label>
+            </div>
+            <textarea class="texto-input" id="input-area" cols="30" rows="11"></textarea>
+            <div class="div-buttons">
+                <input class="button" type="button" onclick="botaoCripto()" value="Criptografar">
+                <input class="button" type="button" onclick="botaoDescripto()" value="Descriptografar">
+            </div>
+        </section>
+
+        <section>
+            <h2>Sua mensagem aparecerá aqui:</h2>
+            <textarea class="texto-input" id="msg" cols="30" rows="11"></textarea>
+            <div class="div-buttons">
+                <input class="button" id="botaoCopiar" type="button" disabled value="Copiar texto">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ramon</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
